@@ -1,0 +1,69 @@
+body {
+  font-family: sans-serif;
+  background-image: url(../attributes/images/4k-forest-7sfd6znw2ry6hnlt.jpg);
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px white;
+  width: 90%;
+  margin: 20px auto;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.form-h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.form-intro {
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+.userForm {
+  font-size: 13px;
+}
+
+.userForm label {
+  gap: 30px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  border: 1px solid white;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.userForm input,
+select,
+textarea {
+  background-color: white;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}

@@ -8,5 +8,90 @@
     <script defer src="./index.js"></script>
     <title>Registration Form</title>
   </head>
-  <body></body>
+  <body>
+    <section class="formSection">
+      <h2 class="form-h2">Contact form</h2>
+      <p class="form-intro">
+        Please fill in your information and we'll be sending your order.
+      </p>
+      <form class="userForm">
+        <label>
+          <span>Your name</span>
+          <div>
+            <input
+              type="text"
+              name="user-first-name"
+              autofocus
+              placeholder="first name"
+              pattern="[A-Z][a-z]{2,19}(-[A-Z][a-z]{2,19})?"
+            />
+            <input
+              type="text"
+              name="user-last-name"
+              placeholder="last name"
+              pattern="[A-Z][a-z]{2,19}(-[A-Z][a-z]{2,19})?"
+            />
+          </div>
+        </label>
+
+        <label>
+          <span>Your email</span>
+          <input
+            type="email"
+            name="user-email"
+            placeholder="your_mail@mail.com"
+          />
+        </label>
+        <label>
+          <span>Phone *</span>
+          <div class="input-group">
+            <input
+              type="tel"
+              name="phone1"
+              pattern="[0-9]{3}"
+              required
+              placeholder="000"
+            />
+            <input
+              type="tel"
+              name="phone2"
+              pattern="[0-9]{3}"
+              required
+              placeholder="000"
+            />
+            <input
+              type="tel"
+              name="phone3"
+              pattern="[0-9]{4}"
+              required
+              placeholder="0000"
+            />
+          </div>
+        </label>
+        <label>
+          <span>Message subject *</span>
+          <select name="user-message-subject" required>
+            <option value="">Other</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+          </select>
+        </label>
+        <label>
+          <span>Message *</span>
+          <textarea
+            name="user-message"
+            maxlength="250"
+            required
+            minlength="2"
+            maxlength="250"
+            rows="5"
+            cols="44"
+          >
+          </textarea>
+        </label>
+        <button type="submit" class="submit-btn">Submit Form</button>
+      </form>
+    </section>
+  </body>
 </html>
