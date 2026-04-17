@@ -15,39 +15,42 @@
         Please fill in your information and we'll be sending your order.
       </p>
       <form class="userForm">
-        <label>
-          <span>Your name</span>
-          <div>
+        <label class="form-row">
+          <span class="label-text">Your name</span>
+          <div class="input-group">
             <input
               type="text"
               name="user-first-name"
-              autofocus
               placeholder="first name"
-              pattern="[A-Z][a-z]{2,19}(-[A-Z][a-z]{2,19})?"
+              pattern="[A-Za-z]{2,20}"
             />
             <input
               type="text"
               name="user-last-name"
               placeholder="last name"
-              pattern="[A-Z][a-z]{2,19}(-[A-Z][a-z]{2,19})?"
+              pattern="[A-Za-z]{2,20}"
             />
           </div>
         </label>
 
-        <label>
-          <span>Your email</span>
-          <input
-            type="email"
-            name="user-email"
-            placeholder="your_mail@mail.com"
-          />
-        </label>
-        <label>
-          <span>Phone *</span>
+        <label class="form-row">
+          <span class="label-text">Your email</span>
           <div class="input-group">
+            <input
+              type="email"
+              name="user-email"
+              placeholder="your_mail@mail.com"
+            />
+          </div>
+        </label>
+
+        <label class="form-row">
+          <span class="label-text">Phone *</span>
+          <div class="input-group phone-group">
             <input
               type="tel"
               name="phone1"
+              maxlength="3"
               pattern="[0-9]{3}"
               required
               placeholder="000"
@@ -55,6 +58,7 @@
             <input
               type="tel"
               name="phone2"
+              maxlength="3"
               pattern="[0-9]{3}"
               required
               placeholder="000"
@@ -62,35 +66,41 @@
             <input
               type="tel"
               name="phone3"
+              maxlength="4"
               pattern="[0-9]{4}"
               required
               placeholder="0000"
             />
           </div>
         </label>
-        <label>
-          <span>Message subject *</span>
-          <select name="user-message-subject" required>
-            <option value="">Other</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-          </select>
+
+        <label class="form-row">
+          <span class="label-text">Message subject *</span>
+          <div class="input-group">
+            <select name="user-message-subject" required>
+              <option value="">Other</option>
+              <option value="A">Order Issue</option>
+              <option value="B">Partnership</option>
+            </select>
+          </div>
         </label>
-        <label>
-          <span>Message *</span>
-          <textarea
-            name="user-message"
-            maxlength="250"
-            required
-            minlength="2"
-            maxlength="250"
-            rows="5"
-            cols="44"
-          >
-          </textarea>
+
+        <label class="form-row">
+          <span class="label-text">Message *</span>
+          <div class="input-group">
+            <textarea
+              name="user-message"
+              minlength="2"
+              maxlength="250"
+              rows="4"
+              required
+            ></textarea>
+          </div>
         </label>
-        <button type="submit" class="submit-btn">Submit Form</button>
+
+        <div class="btn-container">
+          <button type="submit" class="submit-btn">SUBMIT FORM</button>
+        </div>
       </form>
     </section>
   </body>
