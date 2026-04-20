@@ -1,27 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
-  background-image: url(../attributes/images/4k-forest-7sfd6znw2ry6hnlt.jpg);
-  color: white;
-  background-size: cover;
-  background-position: center;
   font-size: 13px;
+  color: white;
+  background-image: url(../attributes/images/4k-forest-7sfd6znw2ry6hnlt.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .formSection {
   display: flex;
   flex-direction: column;
+  width: 90%;
+  margin: 40px auto 20px;
+  padding: 20px;
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: 0 0 10px white;
-  width: 90%;
-  margin: 20px auto;
-  margin-top: 40px;
-  padding: 20px;
 }
 
 .form-h2 {
-  font-size: 25px;
   padding-bottom: 10px;
+  font-size: 25px;
 }
 
 .form-intro {
@@ -40,8 +45,8 @@ body {
 }
 
 .input-group {
-  flex: 1;
   display: flex;
+  flex: 1;
   gap: 15px;
 }
 
@@ -50,11 +55,11 @@ body {
 .userForm textarea {
   width: 100%;
   padding: 10px 15px;
+  color: #333;
+  font-family: inherit;
+  background-color: white;
   border: none;
   border-radius: 2px;
-  background-color: white;
-  font-family: inherit;
-  color: #333;
   outline: none;
 }
 
@@ -63,25 +68,25 @@ body {
 }
 
 .btn-container {
+  display: flex;
+  justify-content: center;
   margin-top: 40px;
   padding-top: 20px;
   border-top: 2px solid rgba(255, 255, 255, 0.3);
-  display: flex;
-  justify-content: center;
 }
 
 .submit-btn {
-  background: transparent;
-  color: white;
-  border: 1px solid white;
-  padding: 12px 0;
   width: 100%;
+  padding: 12px 0;
+  color: white;
   font-weight: bold;
+  background: transparent;
+  border: 1px solid white;
 }
 
 .submit-btn:hover {
-  background: white;
   color: black;
+  background: white;
 }
 
 /* Validation: */
