@@ -101,3 +101,27 @@ body {
 .userForm textarea:invalid {
   border: 2px solid #e74c3c;
 }
+
+/* Adaptability: */
+@media (max-width: 767px) {
+  .form-row {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .label-text {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 8px;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  .formSection {
+    width: 95%;
+    padding: 15px;
+    margin-top: 20px;
+  }
+}

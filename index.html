@@ -23,12 +23,14 @@
               name="user-first-name"
               placeholder="first name"
               pattern="[A-Za-z]{2,20}"
+              required
             />
             <input
               type="text"
               name="user-last-name"
               placeholder="last name"
               pattern="[A-Za-z]{2,20}"
+              required
             />
           </div>
         </label>
@@ -40,6 +42,7 @@
               type="email"
               name="user-email"
               placeholder="your_mail@mail.com"
+              required
             />
           </div>
         </label>
@@ -78,9 +81,9 @@
           <span class="label-text">Message subject *</span>
           <div class="input-group">
             <select name="user-message-subject" required>
-              <option value="">Other</option>
-              <option value="Order Issue">Order Issue</option>
-              <option value="Partnership">Partnership</option>
+              <option value="other">Other</option>
+              <option value="order-issue">Order Issue</option>
+              <option value="partnership">Partnership</option>
             </select>
           </div>
         </label>
